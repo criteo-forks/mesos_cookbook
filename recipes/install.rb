@@ -19,7 +19,7 @@
 # limitations under the License.
 #
 
-include_recipe 'java'
+openjdk_pkg_install node['java']['jdk_version']
 
 include_recipe 'mesos::repo' if node['mesos']['repo']
 

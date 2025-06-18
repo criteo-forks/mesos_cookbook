@@ -12,9 +12,7 @@ issues_url       'https://github.com/criteo-forks/mesos_cookbook/issues'
 
 supports 'centos'
 
-%w[java yum].each do |cookbook|
-  depends cookbook
-end
-
+depends 'java', '>= 8.1.0'
+depends 'yum'
 depends 'systemd'
-chef_version '>= 14' if respond_to?(:chef_version)
+chef_version '>= 15' if respond_to?(:chef_version)

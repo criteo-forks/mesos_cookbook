@@ -8,7 +8,7 @@ gem 'foodcritic'
 gem 'rubocop', '= 0.60.0'
 gem 'serverspec'
 
-gem 'chef', '= 12.14.60'
+gem 'chef', '= 15.5.15'
 
 group :integration do
   gem 'kitchen-ec2'
